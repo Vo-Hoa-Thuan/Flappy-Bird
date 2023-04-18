@@ -132,12 +132,11 @@ void debug(){
 }
 void gameover(){
 	system("cls");
-	cout<<endl;
 	TextColor(2);
-	cout<<"\t\t--------------------------"<<endl;
-	cout<<"\t\t-------- GAME OVER -------"<<endl;
-	cout<<"\t\t--------------------------"<<endl<<endl;
-	cout<<"\t\tPress any key to go back to menu.";
+	gotoxy(50,10); cout <<"--------------------------" << endl;
+	gotoxy(50,12); cout <<"-------- GAME OVER -------" << endl;
+	gotoxy(50,14); cout <<"--------------------------" << endl;
+	gotoxy(47,18); cout <<"Nhan phim bat ki de quay lai menu";
 	getch();
 }
 void updateScore(){
